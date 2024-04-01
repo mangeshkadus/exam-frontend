@@ -1,0 +1,30 @@
+<div class="heading"><h2>Register</h2></div>
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <div class="fullname">
+        <input type="text" formControlName="fullName" placeholder="Full Name" />
+    </div>
+    <div class="username">
+        <input type="text" formControlName="username" placeholder="Username" />
+    </div>
+    <div class="email">
+        <input type="email" formControlName="email" placeholder="Email" />
+    </div>
+    <div class="password">
+        <input type="password" formControlName="password" placeholder="Password" />
+    </div>
+    <div class="confirmpass">
+        <input type="password" formControlName="confirmPassword" placeholder="Confirm Password" />
+    </div>
+    <div class="phonenum">
+        <input type="tel" formControlName="phone" placeholder="Phone Number" />
+    </div>
+   <div class="gender">
+    <select formControlName="gender">
+        <option value="" disabled selected>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+   </div>
+    <button type="submit">Register</button>
+  </form>
+  
